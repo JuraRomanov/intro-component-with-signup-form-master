@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') ; 
+
+*{ 
+    box-sizing: border-box;
+}
+
+:root { 
+    /* Colors  */
+
+    --red :  hsl(0, 100%, 74%) ; 
+    --green : hsl(154, 59%, 51%); 
+    --blue : hsl(248, 32%, 49%); 
+    --dark-blue : hsl(249, 10%, 26%)  ;
+    --grayish-blue :hsl(246, 25%, 77%) ; 
+
+    /* Typography */
+
+    --fz-normal : 16px;  
+
+    --ff-poppins : "Poppins", sans-serif;; 
+    --fw-small : 400 ; 
+    --fw-normal : 500 ; 
+    --fw-bold : 600 ; 
+    --fw-extra-bold : 700 ; 
+    
+    /* Borders */
+
+    --radii : 1rem ; 
+    --radii-small : 0.5rem;
+    /* Shadows  */
+
+    --bsh-main : 0px 8px 4px 0px rgba(34, 60, 80, 0.6); ; 
+}   
+
+body{
+    font-family: var(--ff-poppins);
+    font-size: var(--fz-normal);
+
+    margin: 0;
+    
+    background:url(./images/bg-intro-mobile.png);
+    background-color:var(--red);
+}
+
+
+
+.signup__content { 
+    min-height: 100vh;
+    
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.slogan{ 
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    color:white ;
+    text-align: center;
+}
+
+.slogan__title{ 
+    margin: 0;
+    font-size: 32px;
+    font-weight: var(--fw-extra-bold);
+
+   
+}
+
+
+.signup__box{ 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem ;
+
+    padding: 1rem;
+}
+
+.promo{ 
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: var(--blue);
+    border: none;
+    border-radius: var(--radii);
+    box-shadow: var(--bsh-main) ; 
+
+
+    font-size: var(--fz-normal);
+    color: white;
+    text-align: center;
+    
+    padding: 1rem;
+}
+.promo p { 
+    font-weight: var(--fw-bold);
+    margin: 0;
+}
+
+.forms__box{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    background: white;
+    box-shadow: var(--bsh-main);
+    
+    border-radius: var(--radii);
+    
+    padding: 1rem;
+
+}
+
+.signup__input{ 
+    width: 100%;
+    
+    border-radius: var(--radii-small);
+    border:1px solid var(--grayish-blue); 
+
+
+    padding: 1rem;
+    
+
+    font-weight: var(--fw-bold);
+}
+
+
+@media (min-width : 1440px ) {
+        body { 
+            background:url(./images/bg-intro-desktop.png);
+            background-color:var(--red);
+        }
+}
